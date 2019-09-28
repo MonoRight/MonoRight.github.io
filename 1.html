@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grids tables</title>
+  <style>
+
+  div { border: 1px solid black; }
+ .firstTable{
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-areas:
+          "row1 row1 row1 row1 row1 row1 row1 "
+          "row2 row2 row2 row2 row2 row2 column7"
+          "row3 row3 row3 row3 row3 column6 column7"
+          "row4 row4 row4 row4 column5 column6 column7"
+          "row5 row5 row5 column4 column5 column6  column7"
+          "row6 row6 column3 column4 column5 column6 column7"
+          "row7 column2 column3 column4 column5 column6 column7";
+      grid-gap: 0px;
+      margin: 0;
+      padding: 10pt;
+  }
+
+  .secondTable{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1_2 row1_2 row1_2 row1_2 row1_2 row1_2 column7_2"
+    "row2_2 row2_2 row2_2 row2_2 row2_2 column6_2 column7_2"
+    "row3_2 row3_2 row3_2 row3_2 column5_2 column6_2 column7_2"
+    "row4_2 row4_2 row4_2 column4_2 column5_2 column6_2 column7_2"
+    "row5_2 row5_2 column3_2 column4_2 column5_2 column6_2 column7_2"
+    "row6_2 column2_2 column3_2 column4_2 column5_2 column6_2 column7_2"
+    "row7_2 column2_2 column3_2 column4_2 column5_2 column6_2 column7_2";
+
+    grid-gap: 0px;
+    margin: 0;
+    padding: 10pt;
+  }
+
+  .thirdTable{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1_3 row5_3 column1_3 column2_3 column3_3 column4_3 column5_3"
+    "row2_3 row5_3 column6_3 column2_3 column7_3 column4_3 column8_3"
+    "row2_3 row6_3 column6_3 row7_3 column7_3 column9_3 column8_3"
+    "column10_3 row6_3 column11_3 row7_3 column12_3 column9_3 column13_3"
+    "column10_3 column14_3 column11_3 column15_3 column12_3 column16_3 column13_3"
+    "column17_3 column14_3 column18_3 column15_3 column19_3 column16_3 column20_3"
+    "column17_3 column21_3 column18_3 column22_3 column19_3 row3_3 column20_3";
+
+    grid-gap: 0px;
+    margin: 0;
+    padding: 10pt;
+
+  }
+
+  .forthTable{
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "row1_4 row1_4 row1_4 row2_4 row2_4 row2_4 row3_4"
+    "row4_4 row5_4 row5_4 row5_4 row6_4 row6_4 row6_4"
+    "row7_4 row7_4 row8_4 row8_4 row8_4 row9_4 row9_4"
+    "row19_4 row19_4 row19_4 row20_4 row20_4 row20_4 row21_4"
+    "row10_4 row11_4 row11_4 row11_4 row12_4 row12_4 row12_4"
+    "row13_4 row13_4 row14_4 row14_4 row14_4 row15_4 row15_4"
+    "row16_4 row16_4 row16_4 row17_4 row17_4 row17_4 row18_4";
+
+
+    grid-gap: 0px;
+    margin: 0;
+    padding: 10pt;
+  }
+
+</style>
+</head>
+
+<p style="text-align: center; font-size: 20px; margin: 0;"> 1 </p>
+<span class="firstTable">
+<div style="grid-area: row1">  1    </div>
+<div style="grid-area: row2">    2  </div>
+<div style="grid-area: row3">    3 </div>
+<div style="grid-area:column7 ">     7 </div>
+
+<div style="grid-area: column6">     6 </div>
+<div style="grid-area: row4">     4 </div>
+<div style="grid-area: column5">     5 </div>
+<div style="grid-area: row5">     5 </div>
+<div style="grid-area: column4">     4 </div>
+<div style="grid-area: row6">     6 </div>
+<div style="grid-area: column3">     3 </div>
+<div style="grid-area: row7">     7 </div>
+<div style="grid-area: column2">     2 </div>
+</span>
+
+<p style="text-align: center; font-size: 20px; margin: 0;"> 2 </p>
+
+<span class="secondTable">
+<div style="grid-area: row1_2">  1    </div>
+<div style="grid-area: row2_2">    2  </div>
+<div style="grid-area: column7_2">     7 </div>
+<div style="grid-area: row3_2">    3 </div>
+<div style="grid-area: column6_2">     6 </div>
+<div style="grid-area: row4_2">     4 </div>
+<div style="grid-area: column5_2">     5 </div>
+<div style="grid-area: row5_2">     5 </div>
+<div style="grid-area: column4_2">     4 </div>
+<div style="grid-area: row6_2">     6 </div>
+<div style="grid-area: column3_2">     3 </div>
+<div style="grid-area: row7_2">     7 </div>
+<div style="grid-area: column2_2">     2 </div>
+</span>
+
+<p style="text-align: center; font-size: 20px; margin: 0;"> 3 </p>
+
+<span class="thirdTable">
+<div style="grid-area: row1_3">1 </div>
+<div style="grid-area: row2_3">8 </div>
+<div style="grid-area: row3_3">27 </div>
+<div style="grid-area: row4_3"> </div>
+<div style="grid-area: row5_3">2 </div>
+<div style="grid-area: row6_3">9 </div>
+<div style="grid-area: row7_3">11 </div>
+<div style="grid-area: column7_3">12 </div>
+<div style="grid-area: column6_3">10 </div>
+<div style="grid-area: column5_3">7 </div>
+<div style="grid-area: column4_3">6 </div>
+<div style="grid-area: column3_3">5 </div>
+<div style="grid-area: column2_3">4 </div>
+<div style="grid-area: column1_3">3 </div>
+<div style="grid-area: column8_3">14 </div>
+<div style="grid-area: column9_3">13 </div>
+<div style="grid-area: column10_3">15 </div>
+<div style="grid-area: column11_3">17 </div>
+<div style="grid-area: column12_3">19 </div>
+<div style="grid-area: column13_3">21 </div>
+<div style="grid-area: column14_3">16 </div>
+<div style="grid-area: column15_3">18 </div>
+<div style="grid-area: column16_3">20 </div>
+<div style="grid-area: column17_3">22 </div>
+<div style="grid-area: column18_3">24 </div>
+<div style="grid-area: column19_3">26 </div>
+<div style="grid-area: column20_3">28 </div>
+<div style="grid-area: column21_3">23 </div>
+<div style="grid-area: column22_3">25 </div>
+</span>
+
+<p style="text-align: center; font-size: 20px; margin: 0;"> 4 </p>
+
+<span class="forthTable">
+<div style="grid-area: row1_4">  1    </div>
+<div style="grid-area: row2_4">    2  </div>
+<div style="grid-area: row3_4">  3    </div>
+<div style="grid-area: row4_4">    4  </div>
+<div style="grid-area: row5_4">  5    </div>
+<div style="grid-area: row6_4">    6 </div>
+<div style="grid-area: row7_4">  7    </div>
+<div style="grid-area: row8_4">    8  </div>
+<div style="grid-area: row9_4">  9    </div>
+<div style="grid-area: row10_4">    13  </div>
+<div style="grid-area: row11_4">  14    </div>
+<div style="grid-area: row12_4">    15  </div>
+<div style="grid-area: row13_4">  16    </div>
+<div style="grid-area: row14_4">    17  </div>
+<div style="grid-area: row15_4">  18    </div>
+<div style="grid-area: row16_4">    19  </div>
+<div style="grid-area: row17_4">  20    </div>
+<div style="grid-area: row18_4">    21  </div>
+<div style="grid-area: row19_4">  10    </div>
+<div style="grid-area: row20_4">   11  </div>
+<div style="grid-area: row21_4">    12  </div>
+
+
+</span>
+
+</html>

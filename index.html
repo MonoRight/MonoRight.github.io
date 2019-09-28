@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head><title>My first page</title>
+<meta charset="utf-8">
+
+<style>
+
+p{
+  font-family: "Monotype Corsiva";
+  text-align: left;
+  font-size: 20pt;
+}
+
+h1{
+  text-align: center;
+  font-family: Brush Script MT;
+  font-size: 50px;
+  border-style: solid;
+  border: 1px solid black;
+  border-width: medium;
+  background: rgb(255, 255, 255, 0.6);
+}
+
+h2{
+  font-family: "Georgia";
+  border-bottom: 1px solid black;
+  border-bottom-style: dashed;
+  font-size: 25pt;
+}
+
+h3{
+font-style: oblique;
+font-size: 25pt;
+}
+
+ol{
+margin-left: 10pt;
+margin-right: 10pt;
+font-size: 20pt;
+border: 1px solid green;
+border-right: none;
+border-left: none;
+}
+
+.mainInfo{
+  background: rgb(255, 255, 255, 0.6);
+  border: 3px solid #8B0000;
+  border-style: dotted;
+}
+
+.photos, .pho{
+  text-align: center;
+}
+
+.pho{
+  margin-top: 50px;
+}
+
+.photos img{
+  margin: 30px;
+}
+
+body {
+  background: #B0E0E6;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.photos > img{
+  transition: 1s;
+}
+
+.photos > img:hover{
+  transform: scale(1.1);
+  border-radius: 70%;
+}
+
+table{
+  font-size: 15pt;
+  font-style: italic;
+  padding: 1%;
+  margin-bottom: 15pt;
+  margin-top: 15pt;
+}
+
+.menus{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20pt;
+  flex-wrap: wrap;
+}
+
+.menus > span{
+  border: 1px solid black;
+  font-size: 20pt;
+  border-radius: 20px;
+  padding: 15px;
+  background: #00FA9A;
+  opacity: 1;
+}
+.menus > span:hover{
+  opacity: 0.65;
+  background: #FFA07A;
+}
+
+</style>
+
+</head>
+<body>
+  <main>
+<div><h1>My favorite films</h1></div>
+<div class="menus">
+  <span> Що таке кіно? </span>
+  <span> Мої улюблені фільми за 2018-2019 рік </span>
+  <span>Інформація про фільми</span>
+  <span> Постери </span>
+</div>
+
+<div><h2 style="text-align: center; ">Що таке кіно?</h2></div>
+
+<div class="mainInfo">
+<p>
+  <ins>Кінофі́льм</ins>, також фільм, кіно, кінострічка — аудіовізуальний твір кінематографії,
+  що складається з епізодів, поєднаних між собою творчим задумом і зображувальними засобами,
+  та який є результатом спільної діяльності його авторів, виконавців і виробників.
+  У технологічному плані фільм являє собою сукупність рухомих зображень (монтажних кадрів),
+  пов'язаних єдиним сюжетом. Кожен монтажний кадр складається з послідовності фотографічних або цифрових нерухомих зображень,
+  на яких зафіксовані окремі фази руху. Фільм, як правило, включає в себе звуковий супровід.
+
+  <p>Область людської діяльності, пов'язана зі створенням і відтворенням кінофільмів, називається кінематографом.<p>
+  (Взято з <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%96%D0%BD%D0%BE%D1%84%D1%96%D0%BB%D1%8C%D0%BC">Wikipedia</a>)
+</p>
+</div>
+
+<div class="photos">
+<img src="dog.jpg" width="400"></img>
+<img src="lent.jpg" width="400"></img>
+<img src="prod.jpg" width="400"></img>
+</div>
+
+<div>
+<h3>Список моїх favorite фільмів: </h3>
+<ol>
+<li> Avengers: Endgame</li>
+<li> Us </li>
+<li> Ready Player One</li>
+<li>It (2019)</li>
+<li>Spiderman: Far from home </li>
+</ol>
+</div>
+
+<div>
+<table border="1" width="600" height="200" align="center">
+  <caption><h3>Інформація про фільми</h3></caption>
+  <tr bgcolor="#B0C4DE">
+    <td><b>Фільм</b></td>
+    <td><b>Рік</b></td>
+    <td><b>Жанр</b></td>
+  </tr>
+  <tr>
+    <td><a href="Третя_сторінка.html" target="_blank">Avengers: Endgame</a></td>
+    <td>2019</td>
+    <td>Action movie <p>Fantasy</p></td>
+  </tr>
+  <tr bgcolor="#B0C4DE">
+    <td><a href="Друга_сторінка.html" target="_blank">Us</a></td>
+    <td>2019</td>
+    <td>Horror</td>
+  </tr>
+  <tr>
+    <td><a href="Четверта_сторінка.html" target="_blank">Ready Player One</a></td>
+    <td>2018</td>
+    <td>Fantasy</td>
+  </tr>
+  <tr bgcolor="#B0C4DE">
+    <td>It (2019)</td>
+    <td>2019</td>
+    <td>Horror</td>
+  </tr>
+  <tr>
+    <td>Spiderman: Far from home</td>
+    <td>2019</td>
+    <td>Action movie, Fantasy</td>
+  </tr>
+</table>
+<div>
+
+<div class="pho"><img src="MyCollages.jpg" usemap="#Navigation" width="1000"></img></div>
+<map name="Navigation">
+  <area shape="rect" coords="0,0,253,620" href="https://www.imdb.com/title/tt7349950/">
+  <area shape="rect" coords="253,0,506,620" href="https://www.imdb.com/title/tt6857112/?ref_=nv_sr_1?ref_=nv_sr_1">
+  <area shape="rect" coords="506,0,759,620" href="https://www.imdb.com/title/tt7349950/?ref_=fn_al_tt_3">
+  <area shape="rect" coords="759,0,1000,620" href="https://www.imdb.com/title/tt1677720/?ref_=nv_sr_1?ref_=nv_sr_1">
+</map>
+
+<span style="font-size: 20pt; opacity: 0.5"><a href="1.html" target="_blank"> Д/з таблички</a></span>
+
+</main>
+</body>
+</html>
